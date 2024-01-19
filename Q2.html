@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            text-align:center;
+            font-family:Aharoni;
+        }
+        src {
+            height: 100px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Enter duck details </h1>
+    Name:<input type="text" name="name" value="" id="nam" required /><br /><br />
+    Color:<input type="text" name="color" value="" id="col" required /><br /><br />
+    Age:<input type="number" min="0" name="age" value="" id="ag" required /><br /><br />
+    Weight:<input type="number" min="0" name="weight" value="" id="wei" required /><br /><br />
+    picture:<input class="file-upload-input" type="file" onchange="readURL()" accept="image/*" id="pic" required /><br /><br />
+    <button id="cre" onclick="create()">Create</button>
+    <button onclick="DukeNew.Show()" id="show" disabled>Show</button>
+    <button onclick="DukeNew.Quack()" id="quack" disabled>Quack</button>
+    <div id="ph"></div>
+    <script src="Q2_js.js"></script>
+
+</body>
+</html>
